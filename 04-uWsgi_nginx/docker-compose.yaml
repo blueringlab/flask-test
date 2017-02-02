@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    build: app
+    restart: always
+
+  proxy:
+    build: proxy
+    ports:
+      - "5000:5000"
